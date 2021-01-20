@@ -1,0 +1,5 @@
+[webserver]
+ansible-vm-2
+
+[webserver:vars]
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'

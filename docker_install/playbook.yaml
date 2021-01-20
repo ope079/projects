@@ -1,0 +1,13 @@
+- hosts: manager
+  become: true
+  roles:
+  - common
+  - swarm_manager
+
+- hosts: workers
+  become: true
+  roles:
+  - common
+  - swarm_worker
+
+
